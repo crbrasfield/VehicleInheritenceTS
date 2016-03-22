@@ -1,0 +1,52 @@
+body {
+    overflow: hidden;
+}
+
+#start-button {
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+button {
+    margin: 5px;
+}
+
+.car {
+    background-color:red;
+    height: 20px;
+    width:50px;
+    position: absolute;
+}
+
+.copcar {
+    background-color:blue;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    animation: blinker 0.5s linear infinite;
+}
+
+.motorcycle {
+    background-color: orange;
+    height:20px;
+    width:40px;
+    position: absolute;
+}
+
+.tank{
+    background-color: green;
+    height: 50px;
+    width: 75px;
+    position: absolute;
+}
+
+body.noscroll {
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}
